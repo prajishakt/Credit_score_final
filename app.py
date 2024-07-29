@@ -11,6 +11,7 @@ app = Flask(__name__)
 # Load model 
 model = pickle.load(open('model_bagging.pkl', 'rb'))
 
+
 @app.route('/')
 def hello():
     return render_template('index.html')
